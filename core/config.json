@@ -1,0 +1,48 @@
+{
+    "avatar": {
+        "width": 400,
+        "height": 400,
+        "position_x": 100,
+        "position_y": 100,
+        "fps": 30,
+        "always_on_top": false
+    },
+    "levitation": {
+        "enabled": true,
+        "speed": 1.0,
+        "amplitude": 1
+    },
+    "sprites": {
+        "eyes_open_mouth_closed": "C:/Users/solox/Downloads/Gemini_Generated_Image_jw17bqjw17bqjw17.png",
+        "eyes_open_mouth_open": "C:/Users/solox/Downloads/Gemini_Generated_Image_61t6hg61t6hg61t6.png",
+        "eyes_closed_mouth_closed": "C:/Users/solox/Downloads/Gemini_Generated_Image_nktjhnktjhnktjhn.png",
+        "eyes_closed_mouth_open": "C:/Users/solox/Downloads/Gemini_Generated_Image_qau8reqau8reqau8.png",
+        "idle": "",
+        "talk_end": ""
+    },
+    "audio": {
+        "device_index": 2,
+        "sensitivity": 1,
+        "silence_delay": 0.1,
+        "pitch_detection": true,
+        "pitch_threshold": 50
+    },
+    "talking_effect": {
+        "shake_enabled": true,
+        "shake_intensity": 2,
+        "shake_frequency": 2,
+        "mouth_sync": true,
+        "mouth_sensitivity": 5
+    },
+    "idle_effect": {
+        "transition_enabled": true,
+        "transition_duration": 0.7,
+        "blink_enabled": true,
+        "blink_interval": 7.0,
+        "blink_duration": 0.15
+    },
+    "obs": {
+        "window_title": "VTuber Avatar",
+        "background_transparency": true
+    }
+}
