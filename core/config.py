@@ -2,10 +2,18 @@
 Модуль конфигурации - сохранение и загрузка настроек приложения.
 """
 import json
-import os
+import sys
 from pathlib import Path
 
-CONFIG_DIR = Path(__file__).resolve().parent
+def get_base_path():
+    """Возвращает путь к папке приложения (учитывает PyInstaller)."""
+    if getattr(sys, 'frozen', False):
+        # Если запущено как .exe (PyInstaller)
+        return Path(sys.executable).parent
+    # Если запущен скрипт .py
+    return Path(__file__).resolve().parent.parent
+
+CONFIG_DIR = get_base_path()
 CONFIG_FILE = CONFIG_DIR / "config.json"
 
 DEFAULT_CONFIG = {
